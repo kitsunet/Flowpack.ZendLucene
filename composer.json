@@ -1,0 +1,20 @@
+{
+    "name": "flowpack/zendlucene",
+    "type": "typo3-flow-package",
+    "description": "Add description here",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/zendframework/ZendSearch"
+        }
+    ],
+    "require": {
+        "typo3/flow": "*",
+		"zendframework/zendsearch": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Flowpack\\ZendLucene": "Classes"
+        }
+    }
+}
