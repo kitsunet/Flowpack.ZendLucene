@@ -13,9 +13,6 @@
 		"zendframework/zendsearch": "*"
     },
     "autoload": {
-        "psr-4": {
-            "Flowpack\\ZendLucene\\": "Classes"
-        },
         "psr-0": {
             "Flowpack\\ZendLucene": "Classes"
         }

@@ -2,5 +2,4 @@ TYPO3:
   Flow:
     object:
       excludeClasses:
-        'ZendSearch.*': ['.*']
-        'Zend.*': ['.*']
+        'zendframework.*': ['.*']
