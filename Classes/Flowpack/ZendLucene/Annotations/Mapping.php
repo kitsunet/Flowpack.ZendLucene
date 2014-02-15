@@ -24,71 +24,45 @@ final class Mapping {
 	 * Defaults to the property/field name.
 	 *
 	 * @var string
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/core-types.html
 	 */
 	public $index_name;
 
 	/**
-	 * Set to yes the store actual field in the index, no to not store it.
-	 * Defaults to `no` (note, the JSON document itself is stored, and it can be retrieved from it).
 	 *
-	 * @var string
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/core-types.html
+	 * @var boolean
 	 */
-	public $store;
+	public $isStored;
 
 	/**
-	 * Set to analyzed for the field to be indexed and searchable after being broken down into token using an analyzer.
-	 * not_analyzed means that its still searchable, but does not go through any analysis process or broken down into tokens.
-	 * no means that it won’t be searchable at all (as an individual field; it may still be included in _all).
-	 * Defaults to analyzed.
 	 *
-	 * @var string
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/core-types.html
+	 * @var boolean
 	 */
-	public $index;
+	public $isIndexed;
 
 	/**
-	 * Possible values are `no`, `yes`, `with_offsets`, `with_positions`, `with_positions_offsets`.
-	 * Defaults to `no`.
 	 *
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/core-types.html
-	 * @var string
+	 * @var boolean
 	 */
-	public $term_vector;
+	public $storeTermVector;
 
 	/**
 	 * The boost value. Defaults to `1.0`.
 	 *
 	 * @var float
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/boost-field.html
 	 */
 	public $boost;
 
 	/**
-	 * The analyzer used to analyze the text contents when analyzed during indexing and when searching using a query string.
-	 * Defaults to the globally configured analyzer.
 	 *
-	 * @var string
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/core-types.html
+	 * @var boolean
 	 */
-	public $analyzer;
-
-	/**
-	 * The type to use for this
-	 * Defaults to the property/field type.
-	 *
-	 * @var string
-	 * @see http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/mapping-types.html
-	 */
-	public $type;
+	public $isTokenized;
 
 	/**
 	 * The date format.
 	 * Defaults to `dateOptionalTime`.
 	 *
 	 * @var string
-	 * @see http://www.elasticsearch.org/guide/reference/mapping/date-format.html
 	 */
 	public $format;
 

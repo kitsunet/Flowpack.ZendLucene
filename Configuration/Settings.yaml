@@ -1,3 +1,8 @@
+Flowpack:
+  ZendLucene:
+    client:
+      defaultResultSetLimit: 100
+
 TYPO3:
   Flow:
     object:
