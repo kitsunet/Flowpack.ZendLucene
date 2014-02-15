@@ -8,16 +8,16 @@ Currently this package is not available on packagist.org so you have to include 
 in your root composer.json. Additionally also Zend Lucene is not available via packagist.org so
 this has to be added to the root composer.json as well!
 
-"repositories": [
-	{
-		"type": "vcs",
-		"url": "https://github.com/kitsunet/Flowpack.ZendLucene.git"
-	},
-	{
-		"type": "vcs",
-		"url": "https://github.com/zendframework/ZendSearch"
-	}
-],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/kitsunet/Flowpack.ZendLucene.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/zendframework/ZendSearch"
+		}
+	],
 
 After that you should be able to use composer require to get this package as usual.
 
